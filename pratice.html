@@ -1,0 +1,60 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratice</title>
+    
+</head>
+<body>
+    <h3>This tag is only for pratice ok guys then </h3>
+    <h1 id="greeting">Welcome</h1>
+    <h2 id="content">Thank you</h2>
+</body>
+<script src="pratice.js"></script>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Operators Example</title>
+    <style>
+        input, button {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Operators Example</h1>
+    <label for="num1">Enter a number:</label>
+    <input type="number" id="num1">
+    <br>
+    <label for="num2">Enter another number:</label>
+    <input type="number" id="num2">
+    <br>
+    <button onclick="performOperations()">Perform Operations</button>
+    <p id="result"></p>
+
+    <script>
+        function performOperations() {
+            // Get the values entered by the user
+            let num1 = parseFloat(document.getElementById("num1").value);
+            let num2 = parseFloat(document.getElementById("num2").value);
+
+            // Perform different operations
+            let addition = num1 + num2;
+            let subtraction = num1 - num2;
+            let multiplication = num1 * num2;
+            let division = num1 / num2;
+            let modulus = num1 % num2;
+
+            // Display the results
+            let resultElement = document.getElementById("result");
+            resultElement.innerHTML = `Addition: ${addition}<br>`;
+            resultElement.innerHTML += `Subtraction: ${subtraction}<br>`;
+            resultElement.innerHTML += `Multiplication: ${multiplication}<br>`;
+            resultElement.innerHTML += `Division: ${division}<br>`;
+            resultElement.innerHTML += `Modulus: ${modulus}`;
+        }
+    </script>
+</body>
+</html>
